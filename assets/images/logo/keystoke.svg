@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="281px" height="60px" viewBox="0 0 281 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Elements/Header/01" transform="translate(-315.000000, -40.000000)">
+            <g id="-Elements/Header">
+                <g id="Logo" transform="translate(315.000000, 40.000000)">
+                    <text id="Keystroke-Startup-la" font-family="DMSans-Bold, DM Sans" font-size="20" font-weight="bold" line-spacing="25" fill="#000248">
+                        <tspan x="75" y="24">Keystroke</tspan>
+                        <tspan x="175.14" y="24.5001221" font-family="DMSans-Regular, DM Sans" font-weight="normal"></tspan>
+                        <tspan x="76.16" y="49.5001221" font-family="DMSans-Regular, DM Sans" font-size="18" font-weight="normal">Startup landing template</tspan>
+                    </text>
+                    <g id="Favicon">
+                        <rect id="Base" fill="#702FFF" x="0" y="0" width="60" height="60" rx="14"></rect>
+                        <g id="Group-3" transform="translate(15.000000, 11.000000)">
+                            <circle id="Oval" stroke="#FFFFFF" stroke-width="7" cx="15" cy="15" r="11.5"></circle>
+                            <circle id="Oval-Copy" fill="#FFFFFF" cx="4" cy="34" r="4"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
