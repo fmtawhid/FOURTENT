@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — FOURTENT</title>
+    <title>Career — FOURTENT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="bg-[#08111F] text-white">
 
-    <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 text-lg font-bold tracking-[0.18em] uppercase">
@@ -41,73 +40,88 @@
         </div>
     </nav>
 
-    <!-- Page header -->
     <section class="pt-40 pb-16 px-6 relative overflow-hidden">
         <div class="absolute inset-0 opacity-40 pointer-events-none grid-bg"></div>
-        <div class="absolute top-16 right-10 w-48 h-48 border border-[#00B8FF]/20 rounded-xl opacity-50 float-slow" data-float="0.15"></div>
+        <div class="absolute top-20 right-10 w-56 h-56 border border-[#7C3AED]/20 rounded-xl opacity-60 float-slow" data-float="0.15"></div>
         <div class="mx-auto relative z-10">
-            <div class="page-shell p-8 md:p-10 reveal">
-                <div class="section-label reveal">Get In Touch</div>
-                <h1 class="text-5xl md:text-6xl font-bold mt-6 mb-4 leading-tight tracking-tight reveal delay-1">Let's Build Something Extraordinary</h1>
-                <p class="text-lg text-[#94A3B8] max-w-2xl leading-relaxed reveal delay-2">Tell us about your project and we'll get back to you within one business day.</p>
+            <div class="mb-6 flex items-center gap-2 reveal">
+                <div class="h-1 w-12 bg-[#00B8FF]"></div>
+                <span class="text-[#00B8FF] text-sm font-medium uppercase tracking-[0.2em]">Career</span>
             </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight reveal delay-1">Join the FOURTENT about</h1>
+            <p class="text-lg text-[#94A3B8] max-w-2xl leading-relaxed reveal delay-2">We’re building a culture where curious minds, strong craft, and bold ideas create meaningful digital work.</p>
         </div>
     </section>
 
-    <!-- Contact content -->
-    <section class="pb-24 px-6">
-        <div class="mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10">
-
-            <!-- Form -->
+    <section class="py-16 px-6">
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="card p-8 reveal">
-                <form id="contact-form" class="space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm text-[#94A3B8] mb-2">Full name</label>
-                            <input id="name" name="name" type="text" required placeholder="Jane Doe" class="field-input w-full rounded px-4 py-3 text-sm">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm text-[#94A3B8] mb-2">Email</label>
-                            <input id="email" name="email" type="email" required placeholder="jane@company.com" class="field-input w-full rounded px-4 py-3 text-sm">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block text-sm text-[#94A3B8] mb-2">Project details</label>
-                        <textarea id="message" name="message" required rows="5" placeholder="Tell us what you're building..." class="field-input w-full rounded px-4 py-3 text-sm resize-none"></textarea>
-                    </div>
-                    <button id="contact-submit" type="submit" class="w-full sm:w-auto px-10 py-4 btn-primary font-bold rounded flex items-center justify-center gap-2">
-                        Send Message
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                    </button>
-                    <p id="contact-note" class="hidden text-sm text-[#00B8FF]"></p>
-                </form>
+                <div class="text-3xl text-[#00B8FF] mb-4">01</div>
+                <h3 class="text-xl font-bold mb-3">Creative Strategist</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed">Shape brand direction, audience insight, and digital positioning for future-focused businesses.</p>
+            </div>
+            <div class="card p-8 reveal delay-1">
+                <div class="text-3xl text-[#00B8FF] mb-4">02</div>
+                <h3 class="text-xl font-bold mb-3">Frontend Engineer</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed">Build polished, high-performance web experiences with clean code and thoughtful UX.</p>
+            </div>
+            <div class="card p-8 reveal delay-2">
+                <div class="text-3xl text-[#00B8FF] mb-4">03</div>
+                <h3 class="text-xl font-bold mb-3">Product Designer</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed">Translate complex ideas into elegant interfaces with clarity, systems thinking, and taste.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-[#0D1B2A]/50 border-y border-[#00B8FF]/10">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12 reveal">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="h-1 w-12 bg-[#7C3AED]"></div>
+                    <span class="text-[#7C3AED] text-sm font-medium uppercase tracking-[0.2em]">Why Join Us</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Work on work that matters</h2>
             </div>
 
-            <!-- Contact info -->
-            <div class="space-y-6">
-                <div class="card p-6 reveal delay-1">
-                    <div class="text-2xl text-[#00B8FF] mb-3">✉</div>
-                    <h3 class="font-bold mb-1">Email Us</h3>
-                    <p class="text-[#94A3B8] text-sm">hello@quantum.studio</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-8 reveal">
+                    <h3 class="font-bold text-xl mb-3">Fast-moving abouts</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Small, senior, and collaborative abouts where ideas turn into action quickly.</p>
                 </div>
-                <div class="card p-6 reveal delay-2">
-                    <div class="text-2xl text-[#00B8FF] mb-3">☎</div>
-                    <h3 class="font-bold mb-1">Call Us</h3>
-                    <p class="text-[#94A3B8] text-sm">+1 (415) 555-0182</p>
+                <div class="card p-8 reveal delay-1">
+                    <h3 class="font-bold text-xl mb-3">Creative freedom</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">We value experimentation, sharp thinking, and making the work better every iteration.</p>
                 </div>
-                <div class="card p-6 reveal delay-3">
-                    <div class="text-2xl text-[#00B8FF] mb-3">◈</div>
-                    <h3 class="font-bold mb-1">Visit Us</h3>
-                    <p class="text-[#94A3B8] text-sm">100 Market Street, San Francisco, CA</p>
+                <div class="card p-8 reveal delay-2">
+                    <h3 class="font-bold text-xl mb-3">Meaningful outcomes</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Every project is designed to move businesses forward and create lasting impact.</p>
+                </div>
+                <div class="card p-8 reveal delay-3">
+                    <h3 class="font-bold text-xl mb-3">Remote-friendly culture</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Flexible working that supports focus, balance, and performance across time zones.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 reveal">We’d love to hear from you.</h2>
+            <p class="text-lg text-[#94A3B8] mb-8 reveal delay-1">Send us your portfolio, CV, or a note about what you’re excited to build.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-2">
+                <a href="contact.html" class="px-10 py-4 btn-primary font-bold rounded flex items-center justify-center gap-2">
+                    Apply Now
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="about.html" class="px-10 py-4 btn-secondary rounded font-medium flex items-center justify-center">
+                    Meet the about
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer class="border-t border-[#00B8FF]/10 bg-[#0D1B2A]/50 py-12 px-6">
         <div class="mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
