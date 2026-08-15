@@ -1,0 +1,247 @@
+/* ===== Quantum — shared styles (solid-color design system, no gradients) ===== */
+
+:root {
+    --navy-deep: #08111F;
+    --navy-dark: #0D1B2A;
+    --blue: #00B8FF;
+    --purple: #7C3AED;
+    --cyan: #00E5FF;
+    --white: #FFFFFF;
+    --gray-light: #E8EEF5;
+    --gray-muted: #94A3B8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--navy-deep);
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.reveal.is-visible {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal.delay-1.is-visible { animation-delay: 0.08s; }
+.reveal.delay-2.is-visible { animation-delay: 0.16s; }
+.reveal.delay-3.is-visible { animation-delay: 0.24s; }
+.reveal.delay-4.is-visible { animation-delay: 0.32s; }
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+}
+
+.float-slow { animation: floatY 7s ease-in-out infinite; }
+.float-slower { animation: floatY 9s ease-in-out infinite; animation-delay: 1.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; animation: none; }
+    .float-slow, .float-slower { animation: none; }
+    html { scroll-behavior: auto; }
+}
+
+/* ---------- Surfaces ---------- */
+
+.glass-border {
+    border-color: rgba(0, 184, 255, 0.18);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glass-border:hover {
+    border-color: rgba(0, 184, 255, 0.65);
+    box-shadow: 0 12px 28px -8px rgba(0, 184, 255, 0.18);
+    transform: translateY(-5px);
+}
+
+.grid-bg {
+    background-image:
+        linear-gradient(rgba(0, 184, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 184, 255, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.navbar-solid {
+    background-color: rgba(13, 27, 42, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0, 184, 255, 0.12);
+}
+
+/* ---------- Nav link active state ---------- */
+
+.nav-link {
+    position: relative;
+    color: var(--gray-light);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 0;
+    background-color: var(--blue);
+    transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: var(--blue);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn-primary {
+    background-color: var(--blue);
+    color: var(--navy-deep);
+    border: 1px solid var(--blue);
+    transition: filter 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -8px rgba(0, 184, 255, 0.45);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid rgba(0, 184, 255, 0.3);
+    transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-secondary:hover {
+    border-color: rgba(0, 184, 255, 0.7);
+    background-color: rgba(0, 184, 255, 0.06);
+    transform: translateY(-2px);
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+    background-color: var(--navy-dark);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--blue);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px -12px rgba(0, 184, 255, 0.22);
+}
+
+.card:hover .card-icon {
+    color: var(--blue) !important;
+}
+
+/* ---------- Portfolio image zoom ---------- */
+
+.portfolio-thumb {
+    overflow: hidden;
+}
+
+.portfolio-thumb .thumb-inner {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-thumb:hover .thumb-inner {
+    transform: scale(1.06);
+}
+
+/* ---------- Portfolio filter ---------- */
+
+.filter-btn {
+    border: 1px solid rgba(0, 184, 255, 0.2);
+    color: var(--gray-muted);
+    transition: all 0.25s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    background-color: rgba(0, 184, 255, 0.08);
+}
+
+.portfolio-item {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.portfolio-item.hidden-item {
+    display: none;
+}
+
+/* ---------- Focus states ---------- */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+}
+
+/* ---------- Chart bars (drawing animation) ---------- */
+
+.chart-bar {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chart-bar.is-visible {
+    transform: scaleY(1);
+}
+
+/* ---------- Form fields ---------- */
+
+.field-input {
+    background-color: var(--navy-dark);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.field-input::placeholder {
+    color: var(--gray-muted);
+}
+
+.field-input:focus {
+    border-color: var(--blue);
+    background-color: rgba(0, 184, 255, 0.04);
+    outline: none;
+}
+
+/* ---------- Mobile menu ---------- */
+
+#mobile-menu {
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Quantum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#08111F] text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">
+                <span class="text-[#00B8FF]">●</span> Quantum
+            </a>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html" class="nav-link text-sm">Home</a>
+                <a href="services.html" class="nav-link text-sm">Services</a>
+                <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+                <a href="team.html" class="nav-link text-sm">Team</a>
+                <a href="contact.html" class="nav-link text-sm">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contact.html" class="hidden sm:flex px-6 py-2 btn-primary font-medium text-sm rounded">Get Started</a>
+                <button id="menu-toggle" class="md:hidden p-2 border border-[#00B8FF]/20 rounded" aria-label="Toggle menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden px-6 flex flex-col gap-4 pb-4">
+            <a href="index.html" class="nav-link text-sm">Home</a>
+            <a href="services.html" class="nav-link text-sm">Services</a>
+            <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+            <a href="team.html" class="nav-link text-sm">Team</a>
+            <a href="contact.html" class="nav-link text-sm">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="pt-40 pb-16 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-40 pointer-events-none grid-bg"></div>
+        <div class="absolute top-20 right-10 w-56 h-56 border border-[#7C3AED]/20 rounded-xl opacity-50 float-slow" data-float="0.15"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="mb-6 flex items-center gap-2 reveal">
+                <div class="h-1 w-12 bg-[#7C3AED]"></div>
+                <span class="text-[#7C3AED] text-sm font-medium">What We Do</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight reveal delay-1">Premium Digital Solutions</h1>
+            <p class="text-lg text-[#94A3B8] max-w-2xl leading-relaxed reveal delay-2">Comprehensive services designed to elevate your brand and drive measurable results — from first sketch to production launch.</p>
+        </div>
+    </section>
+
+    <!-- Services grid -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card p-8 group cursor-pointer reveal">
+                <div class="text-3xl card-icon text-[#7C3AED] mb-4 transition">✦</div>
+                <h3 class="text-xl font-bold mb-3">Strategic Design</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed mb-4">Thoughtful design systems that scale across all platforms and touchpoints — from brand identity to interface components.</p>
+                <ul class="space-y-2 text-sm text-[#94A3B8]">
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Design systems & component libraries</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> UX research & journey mapping</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Prototyping & usability testing</li>
+                </ul>
+            </div>
+
+            <div class="card p-8 group cursor-pointer reveal delay-1">
+                <div class="text-3xl card-icon text-[#7C3AED] mb-4 transition">◆</div>
+                <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed mb-4">High-performance applications built with modern technologies, engineered for speed, accessibility, and scale.</p>
+                <ul class="space-y-2 text-sm text-[#94A3B8]">
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Full-stack web & mobile apps</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> API architecture & integrations</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Performance & accessibility audits</li>
+                </ul>
+            </div>
+
+            <div class="card p-8 group cursor-pointer reveal delay-2">
+                <div class="text-3xl card-icon text-[#7C3AED] mb-4 transition">■</div>
+                <h3 class="text-xl font-bold mb-3">Brand Strategy</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed mb-4">Comprehensive brand frameworks that resonate with your target audience and hold up across every channel.</p>
+                <ul class="space-y-2 text-sm text-[#94A3B8]">
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Positioning & messaging</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Visual identity systems</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Go-to-market planning</li>
+                </ul>
+            </div>
+
+            <div class="card p-8 group cursor-pointer reveal delay-3">
+                <div class="text-3xl card-icon text-[#7C3AED] mb-4 transition">▲</div>
+                <h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+                <p class="text-[#94A3B8] text-sm leading-relaxed mb-4">Insights-driven dashboards and analytics platforms that turn raw data into decisions your team can act on.</p>
+                <ul class="space-y-2 text-sm text-[#94A3B8]">
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Custom dashboards & reporting</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Data pipeline engineering</li>
+                    <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#00B8FF] rounded-full"></span> Predictive modeling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-24 px-6 bg-[#0D1B2A]/50 border-y border-[#00B8FF]/10">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 reveal">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="h-1 w-12 bg-[#00B8FF]"></div>
+                    <span class="text-[#00B8FF] text-sm font-medium">How We Work</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Process</h2>
+                <p class="text-[#94A3B8] max-w-2xl">A structured path from discovery to launch, built for clarity at every stage</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="card p-6 reveal">
+                    <div class="text-sm text-[#00B8FF] font-mono mb-3">01</div>
+                    <h3 class="font-bold mb-2">Discover</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">We audit your goals, audience, and market to define what success looks like.</p>
+                </div>
+                <div class="card p-6 reveal delay-1">
+                    <div class="text-sm text-[#00B8FF] font-mono mb-3">02</div>
+                    <h3 class="font-bold mb-2">Design</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">We prototype and refine the experience with you, in fast, visible iterations.</p>
+                </div>
+                <div class="card p-6 reveal delay-2">
+                    <div class="text-sm text-[#00B8FF] font-mono mb-3">03</div>
+                    <h3 class="font-bold mb-2">Build</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">Engineering turns the approved design into a tested, production-ready product.</p>
+                </div>
+                <div class="card p-6 reveal delay-3">
+                    <div class="text-sm text-[#00B8FF] font-mono mb-3">04</div>
+                    <h3 class="font-bold mb-2">Launch</h3>
+                    <p class="text-[#94A3B8] text-sm leading-relaxed">We ship, monitor, and hand off with the analytics you need to keep improving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 reveal">Have a project in mind?</h2>
+            <p class="text-lg text-[#94A3B8] mb-8 reveal delay-1">Tell us what you're building and we'll map the right service mix</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-2">
+                <a href="contact.html" class="px-10 py-4 btn-primary font-bold rounded flex items-center justify-center gap-2">
+                    Start Your Project
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="portfolio.html" class="px-10 py-4 btn-secondary rounded font-medium flex items-center justify-center">
+                    See Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#00B8FF]/10 bg-[#0D1B2A]/50 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-xl font-bold mb-4">
+                        <span class="text-[#00B8FF]">●</span> Quantum
+                    </div>
+                    <p class="text-[#94A3B8] text-sm">Premium digital solutions for ambitious brands</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="team.html" class="hover:text-[#00B8FF] transition">Team</a></li>
+                        <li><a href="portfolio.html" class="hover:text-[#00B8FF] transition">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-[#00B8FF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Design</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Development</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Strategy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#00B8FF]/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-[#94A3B8]">
+                <p>&copy; 2026 Quantum Creative. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-[#00B8FF] transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#00B8FF] transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

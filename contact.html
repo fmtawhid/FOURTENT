@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Quantum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#08111F] text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">
+                <span class="text-[#00B8FF]">●</span> Quantum
+            </a>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html" class="nav-link text-sm">Home</a>
+                <a href="services.html" class="nav-link text-sm">Services</a>
+                <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+                <a href="team.html" class="nav-link text-sm">Team</a>
+                <a href="contact.html" class="nav-link text-sm">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contact.html" class="hidden sm:flex px-6 py-2 btn-primary font-medium text-sm rounded">Get Started</a>
+                <button id="menu-toggle" class="md:hidden p-2 border border-[#00B8FF]/20 rounded" aria-label="Toggle menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden px-6 flex flex-col gap-4 pb-4">
+            <a href="index.html" class="nav-link text-sm">Home</a>
+            <a href="services.html" class="nav-link text-sm">Services</a>
+            <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+            <a href="team.html" class="nav-link text-sm">Team</a>
+            <a href="contact.html" class="nav-link text-sm">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="pt-40 pb-16 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-40 pointer-events-none grid-bg"></div>
+        <div class="absolute top-16 right-10 w-48 h-48 border border-[#00B8FF]/20 rounded-xl opacity-50 float-slow" data-float="0.15"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="mb-6 flex items-center gap-2 reveal">
+                <div class="h-1 w-12 bg-[#00B8FF]"></div>
+                <span class="text-[#00B8FF] text-sm font-medium">Get In Touch</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight reveal delay-1">Let's Build Something Extraordinary</h1>
+            <p class="text-lg text-[#94A3B8] max-w-2xl leading-relaxed reveal delay-2">Tell us about your project and we'll get back to you within one business day.</p>
+        </div>
+    </section>
+
+    <!-- Contact content -->
+    <section class="pb-24 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10">
+
+            <!-- Form -->
+            <div class="card p-8 reveal">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm text-[#94A3B8] mb-2">Full name</label>
+                            <input id="name" name="name" type="text" required placeholder="Jane Doe" class="field-input w-full rounded px-4 py-3 text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm text-[#94A3B8] mb-2">Email</label>
+                            <input id="email" name="email" type="email" required placeholder="jane@company.com" class="field-input w-full rounded px-4 py-3 text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm text-[#94A3B8] mb-2">Company</label>
+                        <input id="company" name="company" type="text" placeholder="Company name" class="field-input w-full rounded px-4 py-3 text-sm">
+                    </div>
+                    <div>
+                        <label for="budget" class="block text-sm text-[#94A3B8] mb-2">Project budget</label>
+                        <select id="budget" name="budget" class="field-input w-full rounded px-4 py-3 text-sm">
+                            <option>Under $25k</option>
+                            <option>$25k – $75k</option>
+                            <option>$75k – $150k</option>
+                            <option>$150k+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm text-[#94A3B8] mb-2">Project details</label>
+                        <textarea id="message" name="message" required rows="5" placeholder="Tell us what you're building..." class="field-input w-full rounded px-4 py-3 text-sm resize-none"></textarea>
+                    </div>
+                    <button id="contact-submit" type="submit" class="w-full sm:w-auto px-10 py-4 btn-primary font-bold rounded flex items-center justify-center gap-2">
+                        Send Message
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </button>
+                    <p id="contact-note" class="hidden text-sm text-[#00B8FF]"></p>
+                </form>
+            </div>
+
+            <!-- Contact info -->
+            <div class="space-y-6">
+                <div class="card p-6 reveal delay-1">
+                    <div class="text-2xl text-[#00B8FF] mb-3">✉</div>
+                    <h3 class="font-bold mb-1">Email Us</h3>
+                    <p class="text-[#94A3B8] text-sm">hello@quantum.studio</p>
+                </div>
+                <div class="card p-6 reveal delay-2">
+                    <div class="text-2xl text-[#00B8FF] mb-3">☎</div>
+                    <h3 class="font-bold mb-1">Call Us</h3>
+                    <p class="text-[#94A3B8] text-sm">+1 (415) 555-0182</p>
+                </div>
+                <div class="card p-6 reveal delay-3">
+                    <div class="text-2xl text-[#00B8FF] mb-3">◈</div>
+                    <h3 class="font-bold mb-1">Visit Us</h3>
+                    <p class="text-[#94A3B8] text-sm">100 Market Street, San Francisco, CA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#00B8FF]/10 bg-[#0D1B2A]/50 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-xl font-bold mb-4">
+                        <span class="text-[#00B8FF]">●</span> Quantum
+                    </div>
+                    <p class="text-[#94A3B8] text-sm">Premium digital solutions for ambitious brands</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="team.html" class="hover:text-[#00B8FF] transition">Team</a></li>
+                        <li><a href="portfolio.html" class="hover:text-[#00B8FF] transition">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-[#00B8FF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Design</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Development</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Strategy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#00B8FF]/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-[#94A3B8]">
+                <p>&copy; 2026 Quantum Creative. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-[#00B8FF] transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#00B8FF] transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

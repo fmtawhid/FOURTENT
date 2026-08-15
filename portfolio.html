@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Quantum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#08111F] text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">
+                <span class="text-[#00B8FF]">●</span> Quantum
+            </a>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html" class="nav-link text-sm">Home</a>
+                <a href="services.html" class="nav-link text-sm">Services</a>
+                <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+                <a href="team.html" class="nav-link text-sm">Team</a>
+                <a href="contact.html" class="nav-link text-sm">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contact.html" class="hidden sm:flex px-6 py-2 btn-primary font-medium text-sm rounded">Get Started</a>
+                <button id="menu-toggle" class="md:hidden p-2 border border-[#00B8FF]/20 rounded" aria-label="Toggle menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden px-6 flex flex-col gap-4 pb-4">
+            <a href="index.html" class="nav-link text-sm">Home</a>
+            <a href="services.html" class="nav-link text-sm">Services</a>
+            <a href="portfolio.html" class="nav-link text-sm">Portfolio</a>
+            <a href="team.html" class="nav-link text-sm">Team</a>
+            <a href="contact.html" class="nav-link text-sm">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="pt-40 pb-12 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-40 pointer-events-none grid-bg"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="mb-6 flex items-center gap-2 reveal">
+                <div class="h-1 w-12 bg-[#00B8FF]"></div>
+                <span class="text-[#00B8FF] text-sm font-medium">Recent Work</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight reveal delay-1">Featured Projects</h1>
+            <p class="text-lg text-[#94A3B8] max-w-2xl leading-relaxed reveal delay-2">Showcasing our most impactful digital transformations across finance, health, media, and data.</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="px-6 pb-8">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-3 reveal">
+            <button class="filter-btn active px-5 py-2 rounded text-sm font-medium" data-filter="all">All</button>
+            <button class="filter-btn px-5 py-2 rounded text-sm font-medium" data-filter="web">Web</button>
+            <button class="filter-btn px-5 py-2 rounded text-sm font-medium" data-filter="product">Product</button>
+            <button class="filter-btn px-5 py-2 rounded text-sm font-medium" data-filter="data">Data</button>
+        </div>
+    </section>
+
+    <!-- Portfolio grid -->
+    <section class="pb-24 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal" data-category="web">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">FinanceFlow</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Next-generation financial dashboard</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">React</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Web3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal delay-1" data-category="product">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">HealthHub</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Patient management platform</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Node.js</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal delay-2" data-category="product">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">CreativeStudio</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Content creation suite</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Next.js</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Canvas API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal delay-3" data-category="data">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">DataVault</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Enterprise analytics platform</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Vue</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">D3.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal" data-category="web">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">MarketPulse</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Real-time marketing performance suite</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Next.js</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item group relative overflow-hidden rounded-xl border border-[#00B8FF]/20 hover:border-[#00B8FF] transition duration-300 reveal delay-1" data-category="data">
+                <div class="portfolio-thumb bg-[#0D1B2A] aspect-video flex items-center justify-center">
+                    <div class="thumb-inner text-center">
+                        <div class="w-16 h-16 bg-[#00B8FF]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <div class="w-8 h-8 border-2 border-[#00B8FF] rounded"></div>
+                        </div>
+                        <p class="text-[#94A3B8] text-sm">Project Preview</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-[#08111F] border-t border-[#00B8FF]/10">
+                    <h3 class="text-xl font-bold mb-2">SignalStream</h3>
+                    <p class="text-[#94A3B8] text-sm mb-4">Predictive analytics for logistics</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Python</span>
+                        <span class="px-3 py-1 bg-[#00B8FF]/10 text-[#00B8FF] text-xs rounded border border-[#00B8FF]/20">Kafka</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 border-t border-[#00B8FF]/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 reveal">Like what you see?</h2>
+            <p class="text-lg text-[#94A3B8] mb-8 reveal delay-1">Let's build the next case study together</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-2">
+                <a href="contact.html" class="px-10 py-4 btn-primary font-bold rounded flex items-center justify-center gap-2">
+                    Start Your Project
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#00B8FF]/10 bg-[#0D1B2A]/50 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-xl font-bold mb-4">
+                        <span class="text-[#00B8FF]">●</span> Quantum
+                    </div>
+                    <p class="text-[#94A3B8] text-sm">Premium digital solutions for ambitious brands</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="team.html" class="hover:text-[#00B8FF] transition">Team</a></li>
+                        <li><a href="portfolio.html" class="hover:text-[#00B8FF] transition">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-[#00B8FF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Design</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Development</a></li>
+                        <li><a href="services.html" class="hover:text-[#00B8FF] transition">Strategy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm text-[#94A3B8]">
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#00B8FF] transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#00B8FF]/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-[#94A3B8]">
+                <p>&copy; 2026 Quantum Creative. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-[#00B8FF] transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#00B8FF] transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
